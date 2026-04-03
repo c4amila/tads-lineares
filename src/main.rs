@@ -8,6 +8,8 @@ use exercicios::{
     ex05::avaliar_expressao,
     ex06::HistoricoNavegacao,
     ex07::EditorTextoMinimalista,
+    ex08::verificador_simbolos,
+    ex09::StackMin,
 };
 
 fn main() {
@@ -72,5 +74,36 @@ fn main() {
     println!("Após refazer: {}", editor.mostrar_texto());
     
     //---
+    println!("\nExercício 08:");
+    /*let expressao = "{[()]}";
+    println!("Expressão: {}", expressao);
+
+    if verificador_simbolos(expressao) {
+        println!("Está correta.");
+    } else {
+        println!("Está incorreta.");
+    }*/
+    let testes = vec!["{[(])}", "((()))", "[{()}]", "({)}"];
+    for teste in testes {
+        println!("\nExpressão: {}", teste);
+        if verificador_simbolos(teste) {
+            println!("Está correta.");
+        } else {
+            println!("Está incorreta.");
+        }
+    }
+    
+    //----
+    println!("\nExercício 09:");
+    let mut pilha = StackMin::new();
+    pilha.push(5);
+    pilha.push(3);
+    pilha.push(7);
+    println!("Valor mínimo: {:?}", pilha.min());
+    pilha.pop();
+    println!("Valor mínimo após pop: {:?}", pilha.min());
+    pilha.pop();
+    println!("Valor mínimo após outro pop: {:?}", pilha.min());
+
 
 }
