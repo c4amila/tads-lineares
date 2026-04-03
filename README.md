@@ -41,5 +41,15 @@ desfazer() e refazer() usando pilhas.
 <br>
 função desfazer() e refazer(): O(1), pois ambas as funções estão fazendo acesso nas pilhas para remover/adicionar elementos, que são de tempo constante.
 
+8.** Sequências de símbolos:** Verifique se expressões como `"{[()]}"`, `"([)]"`, `"((("` têm
+delimitadores balanceados (parênteses, colchetes e chaves).
+<br>
+**Complexidade:** o loop deste código tem complexidade O(n), pois ele está iterando sobre os símbolos uma única vez. As operações de match são O(1), estará verifiando símbolo por símbolo uma vez. As operações de push e pop também são O(1).
+
+9.**Pilha com mínimo:** Implemente `StackMin` com operação min() em O(1), que retorna o menor
+elemento atual da pilha. (Dica: use uma pilha auxiliar.)
+<br>
+**Complexidade:** as funções de push, pop e min são O(1) pois em push() está fazendo a adição do valor na pilha de minimos, em pop() está removendo a pilha e a pilha minima, e min() faz acesso direto no topo da pilha_min.
+
 
 
