@@ -12,6 +12,7 @@ use exercicios::{
     ex09::StackMin,
     ex10::simulador_fila_banco,
     ex11::impressora_compartilhada,
+    ex12::FilaCircular,
 };
 
 fn main() {
@@ -115,4 +116,19 @@ fn main() {
     println!("\nExercício 11:");
     impressora_compartilhada();
 
+    //----
+    println!("\nExercício 12:");
+    let mut buffer = FilaCircular::new(3);
+
+    buffer.enfileirar_mensagem("Mensagem 1".to_string());
+    buffer.enfileirar_mensagem("Mensagem 2".to_string());
+    buffer.enfileirar_mensagem("Mensagem 3".to_string());
+
+    println!("Buffer: {:?}", buffer.listar_mensagens());
+    
+    buffer.enfileirar_mensagem("Mensagem 4".to_string());
+    println!("Buffer após enfileirar mensagem 4: {:?}", buffer.listar_mensagens());
+
+    buffer.desenfileirar_mensagem();
+    println!("Buffer após desenfileirar: {:?}", buffer.listar_mensagens());
 }
