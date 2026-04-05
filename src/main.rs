@@ -10,6 +10,7 @@ use exercicios::{
     ex07::EditorTextoMinimalista,
     ex08::verificador_simbolos,
     ex09::StackMin,
+    ex10::simulador_fila_banco,
 };
 
 fn main() {
@@ -105,5 +106,8 @@ fn main() {
     pilha.pop();
     println!("Valor mínimo após outro pop: {:?}", pilha.min());
 
+    //----
+    println!("\nExercício 10:");
+    simulador_fila_banco();
 
 }
