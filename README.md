@@ -62,7 +62,7 @@ número de páginas. Imprima os trabalhos na ordem de chegada, reportando cada u
 <br>
 **Complexidade:** O(n), pois ele pode fazer a inserção de n impressões, as operações de push_back e pop_front para adicionar as impressões no final da fila é O(1).
 
-12.** Buffer de mensagens:** Implemente um buffer de capacidade fixa usando `FilaCircular` que
+12.**Buffer de mensagens:** Implemente um buffer de capacidade fixa usando `FilaCircular` que
 descarta a mensagem mais antiga quando cheio (comportamento overwrite).
 <br>
 **Complexidade:** As operações de enfileirar e desenfileirar as mensagens é O(1) pois estão acessando a fila, calculando índice e incrementando uma vez, a função listar é O(n) pois está iterando n vezes sobre a quantidade de mensagens na fila. 
