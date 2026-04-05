@@ -51,5 +51,10 @@ elemento atual da pilha. (Dica: use uma pilha auxiliar.)
 <br>
 **Complexidade:** as funções de push, pop e min são O(1) pois em push() está fazendo a adição do valor na pilha de minimos, em pop() está removendo a pilha e a pilha minima, e min() faz acesso direto no topo da pilha_min.
 
+## Fila (Queue)
+10.**Simulador de fila de banco:** Crie uma simulação onde clientes chegam com intervalos aleatórios e
+são atendidos em ordem. Registre o tempo médio de espera.
+<br>
+**Complexidade:** O código é O(n), mas as operações dentro do loop, faz com que os clientes sejam inseridos e removidos da fila uma vez usando push_back e pop_front, sendo O(1).
 
 
