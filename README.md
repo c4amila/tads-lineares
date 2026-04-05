@@ -57,4 +57,9 @@ são atendidos em ordem. Registre o tempo médio de espera.
 <br>
 **Complexidade:** O código é O(n), mas as operações dentro do loop, faz com que os clientes sejam inseridos e removidos da fila uma vez usando push_back e pop_front, sendo O(1).
 
+11.**Impressora compartilhada:** Simule uma fila de impressão onde cada trabalho tem um nome e
+número de páginas. Imprima os trabalhos na ordem de chegada, reportando cada um.
+<br>
+**Complexidade:** O(n), pois ele pode fazer a inserção de n impressões, as operações de push_back e pop_front para adicionar as impressões no final da fila é O(1).
+
 

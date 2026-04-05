@@ -11,6 +11,7 @@ use exercicios::{
     ex08::verificador_simbolos,
     ex09::StackMin,
     ex10::simulador_fila_banco,
+    ex11::impressora_compartilhada,
 };
 
 fn main() {
@@ -109,5 +110,9 @@ fn main() {
     //----
     println!("\nExercício 10:");
     simulador_fila_banco();
+
+    //----
+    println!("\nExercício 11:");
+    impressora_compartilhada();
 
 }
