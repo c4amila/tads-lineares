@@ -67,4 +67,9 @@ descarta a mensagem mais antiga quando cheio (comportamento overwrite).
 <br>
 **Complexidade:** As operações de enfileirar e desenfileirar as mensagens é O(1) pois estão acessando a fila, calculando índice e incrementando uma vez, a função listar é O(n) pois está iterando n vezes sobre a quantidade de mensagens na fila. 
 
+13.**Fila de prioridade manual:** Implemente uma fila onde itens com prioridade maior saem antes, mas
+itens de mesma prioridade seguem FIFO. (Prévia de heap — implemente com busca linear.)
+<br>
+**Complexidade:** A função enfileirar é O(1), pois está apenas fazendo um push, desenfileirar é O(n) pois percorre toda a fila de tarefas n vezes para encontrar os itens de maior prioridade.
+
 

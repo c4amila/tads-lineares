@@ -13,6 +13,7 @@ use exercicios::{
     ex10::simulador_fila_banco,
     ex11::impressora_compartilhada,
     ex12::FilaCircular,
+    ex13::FilaPrioridade,
 };
 
 fn main() {
@@ -131,4 +132,19 @@ fn main() {
 
     buffer.desenfileirar_mensagem();
     println!("Buffer após desenfileirar: {:?}", buffer.listar_mensagens());
+
+    //----
+    println!("\nExercício 13:");
+    let mut fila = FilaPrioridade::new();
+
+    fila.enfileirar(2, "Tarefa 1");
+    fila.enfileirar(1, "Tarefa 2");
+    fila.enfileirar(3, "Tarefa 3");
+    fila.enfileirar(2, "Tarefa 4");
+    fila.enfileirar(1, "Tarefa 5");
+    println!("Desenfileirando: {:?}", fila.desenfileirar());
+    println!("Desenfileirando: {:?}", fila.desenfileirar());
+    println!("Desenfileirando: {:?}", fila.desenfileirar());
+    println!("Desenfileirando: {:?}", fila.desenfileirar());
+    
 }
